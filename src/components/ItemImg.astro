@@ -1,0 +1,10 @@
+---
+const {href, src , alt} = Astro.props;
+---
+<a class="overflow-hidden rounded-lg" href={href}
+  ><img
+    src={src}
+    class="aspect-video object-cover transition-transform hover:scale-110"
+    alt={alt}
+  /></a
+>
