@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import ItemImg from "../components/ItemImg.astro"
+
+---
+
+<Layout title="React">
+   <Header/>
+   <section class="w-full flex justify-center py-8 px-12">
+		<div class="w-full max-w-[1920px] flex flex-col gap-5">
+			<header class="w-full flex flex-col gap-1">
+				<h1 class="text-3xl font-semibold">Encontra los mejores Wallpapers de tus tecnologias favoritas</h1>
+				<p class="text-xl">Descargalos de forma sencilla y con la mejor Calidad.</p>
+			</header>
+			<footer class="w-full">
+				<a href="/" class="bg-slate-200 rounded-full px-4 py-1">React</a>
+            <a href="/" class="bg-slate-200 rounded-full px-4 py-1">Framework</a>
+			</footer>
+		</div>
+	 </section>
+   <section class="w-full flex justify-center py-6 px-12">
+		<div class="w-full max-w-[1920px] grid grid-cols-auto-fit gap-2">
+			<ItemImg href="" src="/public/img/react-1.jpg" alt=""></ItemImg>
+         <ItemImg href="" src="/public/img/react-2.jpg" alt=""></ItemImg>
+         <ItemImg href="" src="/public/img/react-3.jpg" alt=""></ItemImg>
+         <ItemImg href="" src="/public/img/react-4.png" alt=""></ItemImg>
+         <ItemImg href="" src="/public/img/react-5.png" alt=""></ItemImg>
+         <ItemImg href="" src="/public/img/react-6.png" alt=""></ItemImg>
+         <ItemImg href="" src="/public/img/react-7.jpg" alt=""></ItemImg>
+
+		</div>
+	 </section>
+</Layout>
