@@ -2,6 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import ItemImg from "../components/ItemImg.astro"
+import { Image } from 'astro:assets';
+import react1 from '../img/react-1.jpg';
+import react2 from '../img/react-2.jpg';
+import react3 from '../img/react-3.jpg';
+import react4 from '../img/react-4.png';
+import react5 from '../img/react-5.png';
+import react6 from '../img/react-6.png';
 
 export const prerender = false;
 ---
@@ -23,14 +30,24 @@ export const prerender = false;
 	 </section>
    <section class="w-full flex justify-center py-6 px-12">
 		<div class="w-full max-w-[1920px] grid grid-cols-auto-fit gap-2">
-		<ItemImg href="/" src="s../rc/img/react-1.jpg" alt="a"></ItemImg>
-         <ItemImg href="/" src="../src/img/react-2.jpg" alt="a"></ItemImg>
-         <ItemImg href="/" src="../src/img/react-3.jpg" alt="a"></ItemImg>
-         <ItemImg href="/" src="../src/img/react-4.png" alt="a"></ItemImg>
-         <ItemImg href="/" src="../src/img/react-5.png" alt="a"></ItemImg>
-         <ItemImg href="/" src="../src/img/react-6.png" alt="a"></ItemImg>
-         <ItemImg href="/" src="../src/img/react-7.jpg" alt="a"></ItemImg>
-
+			<ItemImg>
+				<Image class="aspect-video object-cover transition-transform hover:scale-110" src={react1} alt="Image"></Image>
+			</ItemImg>
+			<ItemImg>
+				<Image class="aspect-video object-cover transition-transform hover:scale-110" src={react2} alt="Image"></Image>
+			</ItemImg>
+			<ItemImg>
+				<Image class="aspect-video object-cover transition-transform hover:scale-110" src={react3} alt="Image"></Image>
+			</ItemImg>
+			<ItemImg>
+				<Image class="aspect-video object-cover transition-transform hover:scale-110" src={react4} alt="Image"></Image>
+			</ItemImg>
+			<ItemImg>
+				<Image class="aspect-video object-cover transition-transform hover:scale-110" src={react5} alt="Image"></Image>
+			</ItemImg>
+			<ItemImg>
+				<Image class="aspect-video object-cover transition-transform hover:scale-110" src={react6} alt="Image"></Image>
+			</ItemImg>
 		</div>
 	 </section>
 </Layout>
