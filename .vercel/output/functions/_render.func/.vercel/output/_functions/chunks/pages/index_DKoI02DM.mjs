@@ -1,5 +1,5 @@
-/* empty css                            */
-import { c as createAstro, d as createComponent, r as renderTemplate, e as addAttribute, f as renderHead, g as renderSlot, m as maybeRenderHead, h as renderComponent } from '../astro_9nI1UyXG.mjs';
+/* empty css                          */
+import { e as createAstro, f as createComponent, r as renderTemplate, h as addAttribute, i as renderHead, j as renderSlot, m as maybeRenderHead, k as renderComponent } from '../astro_Srf718gm.mjs';
 import 'kleur/colors';
 import 'html-escaper';
 import 'clsx';
@@ -35,20 +35,20 @@ const $$ItemImg = createComponent(async ($$result, $$props, $$slots) => {
 }, "C:/Users/sebas/OneDrive/Escritorio/landing-page-galery/src/components/ItemImg.astro", void 0);
 
 const $$Astro = createAstro();
-const $$react = createComponent(async ($$result, $$props, $$slots) => {
+const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
-  Astro2.self = $$react;
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "React" }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Header", $$Header, {})} ${maybeRenderHead()}<section class="w-full flex justify-center py-8 px-12"> <div class="w-full max-w-[1920px] flex flex-col gap-5"> <header class="w-full flex flex-col gap-1"> <h1 class="text-3xl font-semibold">Encontra los mejores Wallpapers de tus tecnologias favoritas</h1> <p class="text-xl">Descargalos de forma sencilla y con la mejor Calidad.</p> </header> <footer class="w-full"> <a href="/" class="bg-slate-200 rounded-full px-4 py-1">React</a> <a href="/" class="bg-slate-200 rounded-full px-4 py-1">Framework</a> </footer> </div> </section> <section class="w-full flex justify-center py-6 px-12"> <div class="w-full max-w-[1920px] grid grid-cols-auto-fit gap-2"> ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/react-1.jpg", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/react-2.jpg", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/react-3.jpg", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/react-4.png", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/react-5.png", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/react-6.png", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/react-7.jpg", "alt": "" })} </div> </section> ` })}`;
-}, "C:/Users/sebas/OneDrive/Escritorio/landing-page-galery/src/pages/[react].astro", void 0);
+  Astro2.self = $$Index;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Fresh Img" }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Header", $$Header, {})} ${maybeRenderHead()}<main> <section class="w-full flex justify-center py-8 px-12"> <div class="w-full max-w-[1920px] flex flex-col gap-5"> <header class="w-full flex flex-col gap-1"> <h1 class="text-3xl font-semibold">Encontra los mejores <span class="text-cyan-500">Wallpapers</span> de tus tecnologias favoritas</h1> <p class="text-xl">Descargalos de forma sencilla y con la mejor Calidad.</p> </header> <footer class="w-full"> <a href="/" class="bg-slate-200 rounded-full px-4 py-1">Todas las imagenes</a> </footer> </div> </section> <section class="w-full flex justify-center py-6 px-12"> <div class="w-full max-w-[1920px] grid grid-cols-auto-fit gap-2"> ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/all-1.jpg", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/react-2.jpg", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/next-1.webp", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/astro-1.jpg", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/tailwind-1.png", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/html-1.jpg", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/astro-2.webp", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/react-7.jpg", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/next-2.png", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/css-1.webp", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/all-1.jpg", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/react-2.jpg", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/next-1.webp", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/astro-1.jpg", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/tailwind-1.png", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/html-1.jpg", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/astro-2.webp", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/react-7.jpg", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/next-2.png", "alt": "" })} ${renderComponent($$result2, "ItemImg", $$ItemImg, { "href": "", "src": "/public/img/css-1.webp", "alt": "" })} </div> </section> </main> ` })}`;
+}, "C:/Users/sebas/OneDrive/Escritorio/landing-page-galery/src/pages/index.astro", void 0);
 
-const $$file = "C:/Users/sebas/OneDrive/Escritorio/landing-page-galery/src/pages/[react].astro";
-const $$url = "/[react]";
+const $$file = "C:/Users/sebas/OneDrive/Escritorio/landing-page-galery/src/pages/index.astro";
+const $$url = "";
 
-const _react_ = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const index = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
-  default: $$react,
+  default: $$Index,
   file: $$file,
   url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { $$Header as $, _react_ as _, $$ItemImg as a, $$Layout as b };
+export { $$Header as $, $$ItemImg as a, $$Layout as b, index as i };
