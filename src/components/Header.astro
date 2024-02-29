@@ -1,34 +1,35 @@
 ---
 import Github from "../icons/Github.astro";
 ---
-<header class="w-full flex justify-center py-6 px-12">
-    <nav class="w-full grid grid-cols-7 items-center gap-12 max-w-[1920px]">
-      <picture class="">
-        <a href="/" class="font-semibold text-2xl">Fresh Img</a>
-      </picture>
-      <div class="flex col-span-2">
-        <input
-          class="w-full py-2 px-4 border rounded-full"
-          placeholder="Buscador"
-          type="text"
-          name=""
-          id=""
-        />
-      </div>
-      <div class="flex w-full justify-between items-center col-span-3 text-lg">
-        <a href="/">Home</a>
-		<a href="">Html</a>
-		<a href="">Css</a>
-        <a href="">JavaScript</a>
-        <a href="react.astro">React</a>
-        <a href="">Tailwind</a>
-        <a href="">Next Js</a>
-		<a href="">Svelte</a>
-		<a href="">Astro</a>
-      </div>
 
-	  <a href="./" class="place-self-end flex h-full">
-		<Github class="w-8"/>
-	  </a>
-    </nav>
-  </header>
+<header class="w-full flex justify-center py-6 px-12">
+  <nav class="w-full grid grid-cols-7 items-center gap-12 max-w-[1920px]">
+    <picture class="">
+      <a href="/" class="font-semibold text-2xl">Fresh Img</a>
+    </picture>
+    <div class="flex col-span-2">
+      <input
+        class="w-full py-2 px-4 border rounded-full"
+        placeholder="Buscador"
+        type="text"
+        name=""
+        id=""
+      />
+    </div>
+    <div class="flex w-full justify-between items-center col-span-3 text-lg">
+      <a href="/" class={Astro.props.home}>Home</a>
+      <a href="../mac.astro" class={Astro.props.html}>Html</a>
+      <a href="">Css</a>
+      <a href="">JavaScript</a>
+      <a href="../react.astro" class={Astro.props.react}>React</a>
+      <a href="">Tailwind</a>
+      <a href="">Next Js</a>
+      <a href="">Svelte</a>
+      <a href="">Astro</a>
+    </div>
+
+    <a href="./" class="place-self-end flex h-full">
+      <Github class="w-8" />
+    </a>
+  </nav>
+</header>
