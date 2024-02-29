@@ -3,7 +3,7 @@ import Github from "../icons/Github.astro";
 ---
 
 <header class="w-full flex justify-center py-6 px-12">
-  <nav class="w-full grid grid-cols-7 items-center gap-12 max-w-[1920px]">
+  <nav class="w-full grid grid-cols-7 items-center gap-12 max-w-[1920px] max-2xl:gap-10 max-2xl:grid-cols-8">
     <picture class="">
       <a href="/" class="font-semibold text-2xl">Fresh Img</a>
     </picture>
@@ -16,7 +16,7 @@ import Github from "../icons/Github.astro";
         id=""
       />
     </div>
-    <div class="flex w-full justify-between items-center col-span-3 text-lg">
+    <div class="flex w-full justify-between items-center col-span-3 max-2xl:col-span-4 text-lg">
       <a href="/" class={Astro.props.home}>Home</a>
       <a href="../mac.astro" class={Astro.props.html}>Html</a>
       <a href="">Css</a>

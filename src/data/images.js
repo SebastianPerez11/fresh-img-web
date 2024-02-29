@@ -15,6 +15,9 @@ export const images = [
     img: "https://miro.medium.com/v2/resize:fit:1200/1*LjjbC7N7u7H2ScTqMd_M5Q.jpeg",
     type: "Framework",
     textColor: "",
+    bgColor: "bg-cyan-400",
+    details: [ "Minimalista", "4K" , "HD"
+  ]
   },
   {
     id: "tailwind-1",
@@ -22,6 +25,8 @@ export const images = [
     img: "https://miro.medium.com/v2/resize:fit:1200/0*vrbWwf92KcgylQsf.jpg",
     type: "Framework",
     textColor: "",
+    bgColor: "bg-cyan-400",
+    details: [ "Minimalista", "4K" , "HD"]
   },
   {
     id: "next-1",
@@ -29,6 +34,9 @@ export const images = [
     img: "https://wallpaperaccess.com/full/10310181.jpg",
     type: "Framework",
     textColor: "",
+    bgColor: "bg-cyan-400",
+    details: [ "Minimalista", "4K" , "HD"
+  ]
   },
 
 ];

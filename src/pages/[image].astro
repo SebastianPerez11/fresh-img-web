@@ -21,12 +21,12 @@ if (!info) {
       <TagHero slot="tag" tag={`${info.type}`} />
     </Hero>
     <section class="w-full flex justify-center py-8 px-12">
-      <div class="w-full grid grid-cols-2 max-w-[1920px]">
+      <div class="w-full grid grid-cols-2 gap-10 max-w-[1920px]">
         <picture class="overflow-hidden">
-          <img class=" object-cover aspect-video rounded-lg" src={`${info.img}`} alt="" />
+          <img class="w-full h-full object-cover aspect-video rounded-lg" src={`${info.img}`} alt="/" />
         </picture>
-        <div class="flex flex-col gap-10">
-            <header class="flex flex-col gap-3">
+        <div class="w-full flex flex-col gap-10">
+            <header class="flex flex-col gap-4">
                 <h1 class=`text-4xl ${info.textColor}`>{`${info.title}`}</h1>
                 <p class="text-2xl">Descargar Wallpaper totalmente gratis.</p>
                 <div>
