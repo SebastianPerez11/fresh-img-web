@@ -1,14 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
-import ItemImg from "../components/ItemImg.astro";
+import ListOfImg from "../components/ListOfImg.astro";
 import Hero from "../components/Hero.astro";
 import TagHero from "../components/TagHero.astro";
-import { Image } from "astro:assets";
-import react1 from "../img/react-1.jpg";
-import next1 from "../img/next-1.webp";
-import astro1 from "../img/astro-1.jpg";
-import tailwind1 from "../img/tailwind-1.png";
 
 export const prerender = false;
 ---
@@ -20,66 +15,6 @@ export const prerender = false;
       <TagHero slot="tag" tag="Todas las imagenes" />
     </Hero>
 
-    <section class="w-full flex justify-center py-6 px-12">
-      <div class="w-full max-w-[1920px] grid grid-cols-auto-fit gap-2">
-        <ItemImg>
-          <Image
-            class="aspect-video object-cover transition-transform hover:scale-110"
-            src={react1}
-            alt="Image"
-          />
-        </ItemImg>
-        <ItemImg>
-          <Image
-            class="aspect-video object-cover transition-transform hover:scale-110"
-            src={next1}
-            alt="Image"
-          />
-        </ItemImg>
-        <ItemImg>
-          <Image
-            class="aspect-video object-cover transition-transform hover:scale-110"
-            src={astro1}
-            alt="Image"
-          />
-        </ItemImg>
-        <ItemImg>
-          <Image
-            class="aspect-video object-cover transition-transform hover:scale-110"
-            src={tailwind1}
-            alt="Image"
-          />
-        </ItemImg>
-
-        <ItemImg>
-          <Image
-            class="aspect-video object-cover transition-transform hover:scale-110"
-            src={tailwind1}
-            alt="Image"
-          />
-        </ItemImg>
-        <ItemImg>
-          <Image
-            class="aspect-video object-cover transition-transform hover:scale-110"
-            src={astro1}
-            alt="Image"
-          />
-        </ItemImg>
-        <ItemImg>
-          <Image
-            class="aspect-video object-cover transition-transform hover:scale-110"
-            src={next1}
-            alt="Image"
-          />
-        </ItemImg>
-        <ItemImg>
-          <Image
-            class="aspect-video object-cover transition-transform hover:scale-110"
-            src={react1}
-            alt="Image"
-          />
-        </ItemImg>
-      </div>
-    </section>
+    <ListOfImg/>
   </main>
 </Layout>
