@@ -5,9 +5,8 @@ export const images = [
     img: "https://c4.wallpaperflare.com/wallpaper/294/834/442/reactjs-facebook-javascript-minimalism-wallpaper-preview.jpg",
     type: "Biblioteca",
     textColor: "text-cyan-400",
-    bgColor: "bg-cyan-400",
-    details: [ "Minimalista", "4K" , "HD"
-    ]
+    details: ["Minimalista", "4K", "HD"
+    ],
   },
   {
     id: "astro-1",
@@ -15,9 +14,8 @@ export const images = [
     img: "https://miro.medium.com/v2/resize:fit:1200/1*LjjbC7N7u7H2ScTqMd_M5Q.jpeg",
     type: "Framework",
     textColor: "text-orange-500",
-    bgColor: "bg-cyan-400",
-    details: [ "Minimalista", "4K" , "HD"
-  ]
+    details: ["Fantasia", "4K", "HD"
+    ],
   },
   {
     id: "tailwind-1",
@@ -25,8 +23,7 @@ export const images = [
     img: "https://miro.medium.com/v2/resize:fit:1200/0*vrbWwf92KcgylQsf.jpg",
     type: "Framework",
     textColor: "text-cyan-500",
-    bgColor: "bg-cyan-500",
-    details: [ "Minimalista", "4K" , "HD"]
+    details: ["Minimalista", "4K", "HD"],
   },
   {
     id: "next-1",
@@ -34,9 +31,45 @@ export const images = [
     img: "https://wallpaperaccess.com/full/10310181.jpg",
     type: "Framework",
     textColor: "",
-    bgColor: "bg-cyan-400",
-    details: [ "Minimalista", "4K" , "HD"
-  ]
+    details: ["Futurista", "4K", "HD"
+    ],
+  },
+  {
+    id: "html-1",
+    title: "HTML5",
+    img: "https://e0.pxfuel.com/wallpapers/285/701/desktop-wallpaper-html5-apps-goes-offline-offline-app-capability-in-html5-bought-all-the-power-to-store-data-offline-html5-bou-web-development-design-what-is-html-web-design.jpg",
+    type: "Framework",
+    textColor: "text-orange-400",
+    details: ["3D", "4K", "HD"
+    ],
+  },
+  {
+    id: "JavaScript-1",
+    title: "JavaScript",
+    img: "https://wallpaperbat.com/img/873477-float.jpg",
+    type: "Lenguaje de Programación",
+    textColor: "text-yellow-500",
+    details: ["Realista", "4K", "HD"
+    ],
+  },
+  {
+    id: "astro-2",
+    title: "Astro Js",
+    img: "https://external-preview.redd.it/yldtL4iv1q3snOcv6HuSOKyDuH5sOwN--KBcik3Hkzo.jpg?width=1080&crop=smart&auto=webp&s=8058042cb57db9622470f814323b818557141833",
+    type: "Framework",
+    textColor: "text-orange-500",
+    details: ["Fantasia", "4K", "HD"
+    ],
+  },
+  {
+    id: "next-2",
+    title: "Next Js",
+    img: "https://miro.medium.com/v2/resize:fit:1000/1*v3XndYeIsBtk4CkpMf7vmA.jpeg",
+    type: "Framework",
+    textColor: "",
+    details: ["Futurista", "4K", "HD"
+    ],
   },
 
 ];
+

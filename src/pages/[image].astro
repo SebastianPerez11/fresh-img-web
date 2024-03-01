@@ -23,23 +23,38 @@ if (!info) {
     <section class="w-full flex justify-center py-8 px-12">
       <div class="w-full grid grid-cols-2 gap-10 max-w-[1920px]">
         <picture class="overflow-hidden">
-          <img class="w-full h-full object-cover aspect-video rounded-lg" src={`${info.img}`} alt="/" />
+          <img
+            class="w-full h-full object-cover aspect-video rounded-lg"
+            src={`${info.img}`}
+            alt="/"
+          />
         </picture>
         <div class="w-full flex flex-col gap-10">
-            <header class="flex flex-col gap-4">
-                <h1 class=`text-4xl ${info.textColor}`>{`${info.title}`}</h1>
-                <p class="text-2xl">Descargar Wallpaper totalmente gratis.</p>
-                <div>
-                    <TagHero slot="tag" tag={`${info.details[0]}`} />
-                    <TagHero slot="tag" tag={`${info.details[1]}`} />
-                    <TagHero slot="tag" tag={`${info.details[2]}`} />
-                </div>
-            </header>
-            <footer class="flex gap-2">
-                <a class=`${info.bgColor} font-semibold opacity-100 text-lg rounded-xl text-white py-2 px-8` href="/">Descargar</a>
-                <a class=`${info.bgColor} font-semibold opacity-100 text-lg rounded-xl text-white py-2 px-8` href="/">Visualizar</a>
-            </footer>
-            </footer>
+          <header class="flex flex-col gap-4">
+            <h1 class=`text-4xl font-semibold ${info.textColor}`>
+              {`${info.title}`}
+            </h1>
+            <p class="text-2xl">Descargar Wallpaper totalmente gratis.</p>
+            <div class="flex gap-2 items-center">
+                    {
+                      info.details.map((tag) => {
+                        return (
+                            <TagHero slot="tag" tag={tag} />
+                        );
+                      })
+                    }
+            </div>
+          </header>
+          <footer class="flex gap-2">
+            <a
+              class="bg-blue-600 text-lg rounded-lg text-white py-2 px-8"
+              href="/">Descargar</a
+            >
+            <a
+              class="bg-gray-600  text-lg rounded-lg text-white py-2 px-8"
+              href="/">Visualizar</a
+            >
+          </footer>
         </div>
       </div>
     </section>
