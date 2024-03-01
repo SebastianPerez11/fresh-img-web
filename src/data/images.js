@@ -14,7 +14,7 @@ export const images = [
     title: "Astro Js",
     img: "https://miro.medium.com/v2/resize:fit:1200/1*LjjbC7N7u7H2ScTqMd_M5Q.jpeg",
     type: "Framework",
-    textColor: "",
+    textColor: "text-orange-500",
     bgColor: "bg-cyan-400",
     details: [ "Minimalista", "4K" , "HD"
   ]
@@ -24,8 +24,8 @@ export const images = [
     title: "Tailwind Css",
     img: "https://miro.medium.com/v2/resize:fit:1200/0*vrbWwf92KcgylQsf.jpg",
     type: "Framework",
-    textColor: "",
-    bgColor: "bg-cyan-400",
+    textColor: "text-cyan-500",
+    bgColor: "bg-cyan-500",
     details: [ "Minimalista", "4K" , "HD"]
   },
   {
