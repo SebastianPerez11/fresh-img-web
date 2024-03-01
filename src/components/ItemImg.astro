@@ -1,8 +1,12 @@
 ---
-const {href, src , alt} = Astro.props;
+const { id, img, title } = Astro.props;
 ---
-<a class="overflow-hidden rounded-lg cursor-pointer" href={href}
-  >
-  <slot/>
-  </a
->
+
+<a class="" href={`/${id}`}>
+  <img
+    style={`view-transition-name: image-${id};`}
+    class="object-cover aspect-video rounded-lg transition-transform hover:scale-110"
+    src={img}
+    alt={title}
+  />
+</a>

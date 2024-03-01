@@ -1,70 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
-import ItemImg from "../components/ItemImg.astro";
-import { Image } from 'astro:assets';
-import react1 from '../img/react-1.jpg';
-import next1 from '../img/next-1.webp';
-import astro1 from '../img/astro-1.jpg';
-import tailwind1 from '../img/tailwind-1.png';
-
-
+import ListOfImg from "../components/ListOfImg.astro";
+import Hero from "../components/Hero.astro";
+import TagHero from "../components/TagHero.astro";
+export const prerender = false;
 ---
 
 <Layout title="Fresh Img">
-  <Header />
+  <Header home="text-cyan-500" />
   <main>
-    <section class="w-full flex justify-center py-8 px-12">
-      <div class="w-full max-w-[1920px] flex flex-col gap-5">
-        <header class="w-full flex flex-col gap-1">
-          <h1 class="text-3xl font-semibold">
-            Encontra los mejores <span class="text-cyan-500">Wallpapers</span> de
-            tus tecnologias favoritas
-          </h1>
-          <p class="text-xl">
-            Descargalos de forma sencilla y con la mejor Calidad.
-          </p>
-        </header>
-        <footer class="w-full">
-          <a href="/" class="bg-slate-200 rounded-full px-4 py-1"
-            >Todas las imagenes</a
-          >
-        </footer>
-      </div>
-    </section>
+    <Hero>
+      <TagHero slot="tag" tag="Todas las imagenes" />
+    </Hero>
 
-    <section class="w-full flex justify-center py-6 px-12">
-      <div class="w-full max-w-[1920px] grid grid-cols-auto-fit gap-2">
-        <ItemImg>
-          <Image class="aspect-video object-cover transition-transform hover:scale-110" src={react1} alt="Image"></Image>
-        </ItemImg>
-        <ItemImg>
-          <Image class="aspect-video object-cover transition-transform hover:scale-110" src={next1} alt="Image"></Image>
-        </ItemImg>
-        <ItemImg>
-          <Image class="aspect-video object-cover transition-transform hover:scale-110" src={astro1} alt="Image"></Image>
-        </ItemImg>
-        <ItemImg>
-          <Image class="aspect-video object-cover transition-transform hover:scale-110" src={tailwind1} alt="Image"></Image>
-        </ItemImg>
-      
-      
-     
-        <ItemImg>
-          <Image class="aspect-video object-cover transition-transform hover:scale-110" src={tailwind1} alt="Image"></Image>
-        </ItemImg>
-        <ItemImg>
-          <Image class="aspect-video object-cover transition-transform hover:scale-110" src={astro1} alt="Image"></Image>
-        </ItemImg>
-        <ItemImg>
-          <Image class="aspect-video object-cover transition-transform hover:scale-110" src={next1} alt="Image"></Image>
-        </ItemImg>
-        <ItemImg>
-          <Image class="aspect-video object-cover transition-transform hover:scale-110" src={react1} alt="Image"></Image>
-        </ItemImg>
-        
-    
-      </div>
-    </section>
+    <ListOfImg/>
   </main>
 </Layout>
