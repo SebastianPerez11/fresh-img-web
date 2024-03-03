@@ -44,7 +44,7 @@ export const images = [
     ],
   },
   {
-    id: "JavaScript-1",
+    id: "javascript-1",
     title: "JavaScript",
     img: "https://wallpaperbat.com/img/873477-float.jpg",
     type: "Lenguaje de Programación",
@@ -70,6 +70,68 @@ export const images = [
     details: ["Futurista", "4K", "HD"
     ],
   },
-
+  {
+    id: "html-2",
+    title: "HTML5",
+    img: "https://wallpaperbat.com/img/645616-my-free-wallpaper-abstract-wallpaper-html-5.jpg",
+    type: "Framework",
+    textColor: "text-orange-400",
+    details: ["3D", "4K", "HD"
+    ],
+  },
+  {
+    id: "html-4",
+    title: "HTML5",
+    img: "https://e0.pxfuel.com/wallpapers/285/701/desktop-wallpaper-html5-apps-goes-offline-offline-app-capability-in-html5-bought-all-the-power-to-store-data-offline-html5-bou-web-development-design-what-is-html-web-design.jpg",
+    type: "Framework",
+    textColor: "text-orange-400",
+    details: ["3D", "4K", "HD"
+    ],
+  },
+  {
+    id: "html-3",
+    title: "HTML5",
+    img: "https://wallpaperbat.com/img/645616-my-free-wallpaper-abstract-wallpaper-html-5.jpg",
+    type: "Framework",
+    textColor: "text-orange-400",
+    details: ["3D", "4K", "HD"
+    ],
+  },
+  {
+    id: "css-1",
+    title: "CSS3",
+    img: "https://wallpapercave.com/wp/wp2742473.jpg",
+    type: "Framework",
+    textColor: "text-orange-400",
+    details: ["3D", "4K", "HD"
+    ],
+  },
+  {
+    id: "javascript-4",
+    title: "JavaScript",
+    img: "https://miro.medium.com/v2/resize:fit:810/1*iyySjhSD7tdqG9J0YZxfdw.png",
+    type: "Lenguaje de Programación",
+    textColor: "text-yellow-500",
+    details: ["Realista", "4K", "HD"
+    ],
+  },
+  {
+    id: "javascript-2",
+    title: "JavaScript",
+    img: "https://midu.dev/images/wallpapers/una-taza-de-javascript.png",
+    type: "Lenguaje de Programación",
+    textColor: "text-yellow-500",
+    details: ["Realista", "4K", "HD"
+    ],
+  },
+  {
+    id: "javascript-3",
+    title: "JavaScript",
+    img: "https://midu.dev/images/wallpapers/javascript-grande-horizontal-4k.png",
+    type: "Lenguaje de Programación",
+    textColor: "text-yellow-500",
+    details: ["Realista", "4K", "HD"
+    ],
+  },
 ];
 
