@@ -10,17 +10,17 @@ const { image } = Astro.params;
 const info = images.find((b) => b.id === image);
 ---
 
-<Layout title="JavaScript">
-  <Header js="text-cyan-500" />
+<Layout title="Astro Js">
+  <Header tailwind="text-cyan-500" />
   <main>
     <Hero>
-      <TagHero slot="tag" tag="JavaScript" />
+      <TagHero slot="tag" tag="Astro Js" />
     </Hero>
     <section class="w-full flex justify-center py-6 px-12">
       <ul class="w-full max-w-[1920px] grid grid-cols-auto-fit gap-2">
         {
           images.map(({ id, title, img }) => {
-            if (id.includes("javascript")) {
+            if (id.includes("astro")) {
               return <ItemImg id={id} title={title} img={img} />;
             }
           })

@@ -82,7 +82,7 @@ export const images = [
   {
     id: "html-4",
     title: "HTML5",
-    img: "https://e0.pxfuel.com/wallpapers/285/701/desktop-wallpaper-html5-apps-goes-offline-offline-app-capability-in-html5-bought-all-the-power-to-store-data-offline-html5-bou-web-development-design-what-is-html-web-design.jpg",
+    img: "https://c4.wallpaperflare.com/wallpaper/453/129/282/html5-hyper-text-markup-language-html-wallpaper-preview.jpg",
     type: "Framework",
     textColor: "text-orange-400",
     details: ["3D", "4K", "HD"
@@ -91,7 +91,7 @@ export const images = [
   {
     id: "html-3",
     title: "HTML5",
-    img: "https://wallpaperbat.com/img/645616-my-free-wallpaper-abstract-wallpaper-html-5.jpg",
+    img: "https://wallpapercave.com/wp/wp11725619.jpg",
     type: "Framework",
     textColor: "text-orange-400",
     details: ["3D", "4K", "HD"
@@ -131,6 +131,51 @@ export const images = [
     type: "Lenguaje de Programación",
     textColor: "text-yellow-500",
     details: ["Realista", "4K", "HD"
+    ],
+  },
+  {
+    id: "astro-3",
+    title: "Astro Js",
+    img: "https://blog.openreplay.com/images/building-an-astro-website-with-wordpress-as-a-headless-cms/images/hero.png",
+    type: "Framework",
+    textColor: "text-orange-500",
+    details: ["Fantasia", "4K", "HD"
+    ],
+  },
+  {
+    id: "astro-4",
+    title: "Astro Js",
+    img: "https://reywins.com/images/astro-banner.png",
+    type: "Framework",
+    textColor: "text-orange-500",
+    details: ["Fantasia", "4K", "HD"
+    ],
+  },
+  {
+    id: "next-3",
+    title: "Next Js",
+    img: "https://wallpapercave.com/wp/wp11846968.png",
+    type: "Framework",
+    textColor: "",
+    details: ["Futurista", "4K", "HD"
+    ],
+  },
+  {
+    id: "next-4",
+    title: "Next Js",
+    img: "https://images.ctfassets.net/aq13lwl6616q/6F802DfBmpgmgUKfFgzeif/74ea9b5d6f987ddd7af36b1dd2094492/nextjs_zero_to_mastery.png",
+    type: "Framework",
+    textColor: "",
+    details: ["Futurista", "4K", "HD"
+    ],
+  },
+  {
+    id: "next-5",
+    title: "Next Js",
+    img: "https://media.licdn.com/dms/image/D4E12AQEIqlkU8NSvJg/article-cover_image-shrink_600_2000/0/1692105491054?e=2147483647&v=beta&t=5a8EH7I7NCdUmV13-itNvChm4W_yJOQxx4iFqbaEilE",
+    type: "Framework",
+    textColor: "",
+    details: ["Futurista", "4K", "HD"
     ],
   },
 ];

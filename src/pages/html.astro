@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import ItemImg from "../components/ItemImg.astro";
+import TagHero from "../components/TagHero.astro";
 import { images } from "../data/images";
 const { image } = Astro.params;
 
@@ -12,7 +13,9 @@ const info = images.find((b) => b.id === image);
 <Layout title="html">
   <Header html="text-cyan-500" />
   <main>
-    <Hero />
+    <Hero>
+      <TagHero slot="tag" tag="HTML5" />
+    </Hero>
     <section class="w-full flex justify-center py-6 px-12">
       <ul class="w-full max-w-[1920px] grid grid-cols-auto-fit gap-2">
         {
