@@ -2,10 +2,10 @@
 const { id, img, title } = Astro.props;
 ---
 
-<a class="overflow-hidden max-w-[445px] rounded-lg" href={`/${id}`}>
+<a class="overflow-hidden min-sm:max-w-72 max-2xl:max-w-[445px] rounded-lg" href={`/${id}`}>
   <img
     style={`view-transition-name: image-${id};`}
-    class="object-cover aspect-video rounded-lg transition-transform hover:scale-110 max-w-[445px]"
+    class="object-cover aspect-video rounded-lg transition-transform hover:scale-110 "
     src={img}
     alt={title}
   />

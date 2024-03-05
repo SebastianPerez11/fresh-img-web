@@ -1,13 +1,14 @@
 ---
 import Github from "../icons/Github.astro";
+import Menu from "../icons/Menu.astro";
 ---
 
 <header class="w-full flex justify-center py-6 px-12">
-  <nav class="w-full grid grid-cols-7 items-center gap-12 max-w-[1920px] max-2xl:gap-10 max-2xl:grid-cols-8">
-    <picture class="">
+  <nav class="w-full grid grid-cols-8 items-center max-w-[1920px] max-2xl:gap-4 max-xl:grid-cols-6">
+    <picture class="max-md:col-span-2">
       <a href="/" class="font-semibold text-2xl">Fresh Img</a>
     </picture>
-    <div class="flex col-span-2">
+    <div class="flex col-span-2 max-xl:col-span-3">
       <input
         class="w-full py-2 px-4 border rounded-full"
         placeholder="Buscador"
@@ -16,7 +17,7 @@ import Github from "../icons/Github.astro";
         id=""
       />
     </div>
-    <div class="flex w-full justify-between items-center col-span-3 max-2xl:col-span-4 text-lg">
+    <div class="flex w-full justify-between items-center col-span-3 max-2xl:col-span-4 text-lg max-xl:hidden">
       <a href="/" class={Astro.props.home}>Home</a>
       <a href="/html/" class={Astro.props.html}>Html</a>
       <a href="/css/" class={Astro.props.css}>Css</a>
@@ -26,9 +27,11 @@ import Github from "../icons/Github.astro";
       <a href="/next/" class={Astro.props.next}>Next Js</a>
       <a href="/astrojs/" class={Astro.props.astro}>Astro</a>
     </div>
-    <a href="https://github.com/SebastianPerez11" target="_blank" class="place-self-end flex h-full">
-
-      <Github class="w-8" />
-    </a>
+  </nav>
+  <a href="https://github.com/SebastianPerez11" target="_blank" class="place-self-center w-8 h-8 max-xl:hidden">
+    <Github class="w-8" />
+  </a>
+  <nav class="flex items-center justify-center xl:hidden">
+    <Menu class="w-8 cursor-pointer"/>
   </nav>
 </header>
