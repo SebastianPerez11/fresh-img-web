@@ -2,7 +2,7 @@
 import { c as createAstro, d as createComponent, r as renderTemplate, m as maybeRenderHead, e as addAttribute, f as renderComponent } from '../astro_C4fD_Pcz.mjs';
 import 'kleur/colors';
 import 'html-escaper';
-import { i as images, $ as $$Header, a as $$Hero, b as $$TagHero, c as $$Layout } from './_image__Dx5rafLS.mjs';
+import { i as images, $ as $$Header, a as $$Hero, b as $$TagHero, c as $$Layout } from './_image__DZRpGB2b.mjs';
 import 'clsx';
 
 const $$Astro$1 = createAstro();

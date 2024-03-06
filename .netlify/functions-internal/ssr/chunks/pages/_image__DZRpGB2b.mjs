@@ -70,7 +70,7 @@ const images = [
   {
     id: "react-1",
     title: "React Js",
-    img: "../src/img/react-2.jpg",
+    img: "img/react-2.jpg",
     type: "Biblioteca",
     textColor: "text-cyan-400",
     details: ["Minimalista", "4K", "HD"
