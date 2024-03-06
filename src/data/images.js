@@ -11,7 +11,7 @@ export const images = [
   {
     id: "react-1",
     title: "React Js",
-    img: "img/react-2.jpg",
+    img: "../img/react/react-1.webp",
     type: "Biblioteca",
     textColor: "text-cyan-400",
     details: ["Minimalista", "4K", "HD"
@@ -33,6 +33,15 @@ export const images = [
     type: "Framework",
     textColor: "text-cyan-500",
     details: ["Minimalista", "4K", "HD"],
+  },
+  {
+    id: "react-3",
+    title: "React Js",
+    img: "../img/react/react-3.webp",
+    type: "Biblioteca",
+    textColor: "text-cyan-400",
+    details: ["Minimalista", "4K", "HD"
+    ],
   },
   {
     id: "next-1",
@@ -185,6 +194,15 @@ export const images = [
     type: "Framework",
     textColor: "",
     details: ["Futurista", "4K", "HD"
+    ],
+  },
+  {
+    id: "react-2",
+    title: "React Js",
+    img: "../img/react/react-2.webp",
+    type: "Biblioteca",
+    textColor: "text-cyan-400",
+    details: ["Minimalista", "4K", "HD"
     ],
   },
 ];
