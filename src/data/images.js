@@ -1,8 +1,17 @@
 export const images = [
+  // {
+  //   id: "react-1",
+  //   title: "React Js",
+  //   img: "https://c4.wallpaperflare.com/wallpaper/294/834/442/reactjs-facebook-javascript-minimalism-wallpaper-preview.jpg",
+  //   type: "Biblioteca",
+  //   textColor: "text-cyan-400",
+  //   details: ["Minimalista", "4K", "HD"
+  //   ],
+  // },
   {
     id: "react-1",
     title: "React Js",
-    img: "https://c4.wallpaperflare.com/wallpaper/294/834/442/reactjs-facebook-javascript-minimalism-wallpaper-preview.jpg",
+    img: "src/img/react-2.jpg",
     type: "Biblioteca",
     textColor: "text-cyan-400",
     details: ["Minimalista", "4K", "HD"

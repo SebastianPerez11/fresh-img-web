@@ -4,11 +4,11 @@ import Menu from "../icons/Menu.astro";
 ---
 
 <header class="w-full flex justify-center py-6 px-12 max-md:px-2">
-  <nav class="w-full grid grid-cols-8 gap-10 items-center max-w-[1920px] max-2xl:gap-4 max-xl:grid-cols-6">
-    <picture class="max-md:col-span-2">
+  <nav class="w-full grid grid-cols-8 gap-10 items-center max-w-[1920px] max-2xl:gap-4 max-xl:grid-cols-6 max-sm:grid-cols-4">
+    <picture class="max-md:col-span-2 ">
       <a href="/" class="font-semibold text-2xl">Fresh Img</a>
     </picture>
-    <div class="flex col-span-2 max-xl:col-span-3">
+    <div class="flex col-span-2 max-xl:col-span-3 max-sm:col-span-full">
       <input
         class="w-full py-2 px-4 border rounded-full"
         placeholder="Buscador"
@@ -31,7 +31,7 @@ import Menu from "../icons/Menu.astro";
   <a href="https://github.com/SebastianPerez11" target="_blank" class="place-self-center w-8 h-8 max-xl:hidden">
     <Github class="w-8" />
   </a>
-  <nav class="flex items-center justify-center xl:hidden">
-    <Menu class="w-8 cursor-pointer"/>
+  <nav class="flex w-[42px] h-[42px] items-center justify-center xl:hidden">
+    <Menu class="w-8 h-8 cursor-pointer"/>
   </nav>
 </header>
