@@ -20,8 +20,8 @@ if (!info) {
       <TagHero slot="tag" tag={`${info.title}`} />
       <TagHero slot="tag" tag={`${info.type}`} />
     </Hero>
-    <section class="w-full flex justify-center py-8 px-12">
-      <div class="w-full grid grid-cols-2 gap-10 max-w-[1920px]">
+    <section class="w-full flex justify-center py-8 px-12 max-md:px-2">
+      <div class="w-full grid grid-cols-2 gap-10 max-w-[1920px] max-lg:grid-cols-1">
         <picture class="overflow-hidden">
           <img
             style={`view-transition-name: image-${info.id};`}

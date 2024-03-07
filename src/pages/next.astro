@@ -16,7 +16,7 @@ const info = images.find((b) => b.id === image);
     <Hero>
       <TagHero slot="tag" tag="Next Js" />
     </Hero>
-    <section class="w-full flex justify-center py-6 px-12">
+    <section class="w-full flex justify-center py-6 px-12 max-md:px-2">
       <ul class="w-full max-w-[1920px] grid grid-cols-auto-fit gap-2">
         {
           images.map(({ id, title, img }) => {
