@@ -5,7 +5,7 @@ import { images } from "../data/images";
 ---
 
 <section class="w-full flex justify-center py-6 px-12 max-md:px-2">
-  <ul class="w-full max-w-[1920px] grid grid-cols-auto-fit gap-2">
+  <ul class="w-full max-w-[1920px] grid grid-cols-auto-fit max-md:grid-cols-auto-fill gap-2">
     {
       images.map(({ id, title, img }) => {
         return <ItemImg id={id} title={title} img={img} />;
