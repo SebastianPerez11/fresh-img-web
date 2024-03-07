@@ -1,13 +1,4 @@
 export const images = [
-  // {
-  //   id: "react-1",
-  //   title: "React Js",
-  //   img: "https://c4.wallpaperflare.com/wallpaper/294/834/442/reactjs-facebook-javascript-minimalism-wallpaper-preview.jpg",
-  //   type: "Biblioteca",
-  //   textColor: "text-cyan-400",
-  //   details: ["Minimalista", "4K", "HD"
-  //   ],
-  // },
   {
     id: "react-1",
     title: "React Js",
@@ -20,7 +11,7 @@ export const images = [
   {
     id: "astro-1",
     title: "Astro Js",
-    img: "https://miro.medium.com/v2/resize:fit:1200/1*LjjbC7N7u7H2ScTqMd_M5Q.jpeg",
+    img: "../img/astro/astro-3.webp",
     type: "Framework",
     textColor: "text-orange-500",
     details: ["Fantasia", "4K", "HD"
@@ -29,7 +20,7 @@ export const images = [
   {
     id: "tailwind-1",
     title: "Tailwind Css",
-    img: "https://miro.medium.com/v2/resize:fit:1200/0*vrbWwf92KcgylQsf.jpg",
+    img: "../img/tailwind/tailwind-1.webp",
     type: "Framework",
     textColor: "text-cyan-500",
     details: ["Minimalista", "4K", "HD"],
@@ -46,7 +37,7 @@ export const images = [
   {
     id: "next-1",
     title: "Next Js",
-    img: "https://wallpaperaccess.com/full/10310181.jpg",
+    img: "../img/next/next-1.webp",
     type: "Framework",
     textColor: "",
     details: ["Futurista", "4K", "HD"
@@ -55,7 +46,7 @@ export const images = [
   {
     id: "html-1",
     title: "HTML5",
-    img: "https://e0.pxfuel.com/wallpapers/285/701/desktop-wallpaper-html5-apps-goes-offline-offline-app-capability-in-html5-bought-all-the-power-to-store-data-offline-html5-bou-web-development-design-what-is-html-web-design.jpg",
+    img: "../img/html/html-1.webp",
     type: "Framework",
     textColor: "text-orange-400",
     details: ["3D", "4K", "HD"
@@ -64,7 +55,7 @@ export const images = [
   {
     id: "javascript-1",
     title: "JavaScript",
-    img: "https://wallpaperbat.com/img/873477-float.jpg",
+    img: "../img/js/js-1.webp",
     type: "Lenguaje de Programación",
     textColor: "text-yellow-500",
     details: ["Realista", "4K", "HD"
@@ -73,34 +64,51 @@ export const images = [
   {
     id: "astro-2",
     title: "Astro Js",
-    img: "https://external-preview.redd.it/yldtL4iv1q3snOcv6HuSOKyDuH5sOwN--KBcik3Hkzo.jpg?width=1080&crop=smart&auto=webp&s=8058042cb57db9622470f814323b818557141833",
+    img: "../img/astro/astro-2.webp",
     type: "Framework",
     textColor: "text-orange-500",
     details: ["Fantasia", "4K", "HD"
     ],
   },
   {
-    id: "next-2",
-    title: "Next Js",
-    img: "https://miro.medium.com/v2/resize:fit:1000/1*v3XndYeIsBtk4CkpMf7vmA.jpeg",
-    type: "Framework",
-    textColor: "",
-    details: ["Futurista", "4K", "HD"
-    ],
-  },
-  {
-    id: "html-2",
-    title: "HTML5",
-    img: "https://wallpaperbat.com/img/645616-my-free-wallpaper-abstract-wallpaper-html-5.jpg",
+    id: "css-5",
+    title: "CSS3",
+    img: "../img/css/css-5.webp",
     type: "Framework",
     textColor: "text-orange-400",
     details: ["3D", "4K", "HD"
     ],
   },
   {
-    id: "html-4",
+    id: "next-2",
+    title: "Next Js",
+    img: "../img/next/next-2.webp",
+    type: "Framework",
+    textColor: "",
+    details: ["Futurista", "4K", "HD"
+    ],
+  },
+  {
+    id: "tailwind-2",
+    title: "Tailwind Css",
+    img: "../img/tailwind/tailwind-2.webp",
+    type: "Framework",
+    textColor: "text-cyan-500",
+    details: ["Minimalista", "4K", "HD"],
+  },
+  {
+    id: "html-2",
     title: "HTML5",
-    img: "https://c4.wallpaperflare.com/wallpaper/453/129/282/html5-hyper-text-markup-language-html-wallpaper-preview.jpg",
+    img: "../img/html/html-2.webp",
+    type: "Framework",
+    textColor: "text-orange-400",
+    details: ["3D", "4K", "HD"
+    ],
+  },
+  {
+    id: "css-2",
+    title: "CSS3",
+    img: "../img/css/css-2.webp",
     type: "Framework",
     textColor: "text-orange-400",
     details: ["3D", "4K", "HD"
@@ -109,43 +117,87 @@ export const images = [
   {
     id: "html-3",
     title: "HTML5",
-    img: "https://wallpapercave.com/wp/wp11725619.jpg",
+    img: "../img/html/html-3.webp",
     type: "Framework",
     textColor: "text-orange-400",
     details: ["3D", "4K", "HD"
+    ],
+  },
+  {
+    id: "react-5",
+    title: "React Js",
+    img: "../img/react/react-5.webp",
+    type: "Biblioteca",
+    textColor: "text-cyan-400",
+    details: ["Minimalista", "4K", "HD"
+    ],
+  },
+  {
+    id: "next-3",
+    title: "Next Js",
+    img: "../img/next/next-3.webp",
+    type: "Framework",
+    textColor: "",
+    details: ["Futurista", "4K", "HD"
+    ],
+  },
+  {
+    id: "html-4",
+    title: "HTML5",
+    img: "../img/html/html-4.webp",
+    type: "Framework",
+    textColor: "text-orange-400",
+    details: ["3D", "4K", "HD"
+    ],
+  },
+  {
+    id: "astro-6",
+    title: "Astro Js",
+    img: "../img/astro/astro-6.webp",
+    type: "Framework",
+    textColor: "text-orange-500",
+    details: ["Fantasia", "4K", "HD"
     ],
   },
   {
     id: "css-1",
     title: "CSS3",
-    img: "https://wallpapercave.com/wp/wp2742473.jpg",
+    img: "../img/css/css-1.webp",
     type: "Framework",
     textColor: "text-orange-400",
     details: ["3D", "4K", "HD"
     ],
   },
   {
-    id: "javascript-4",
+    id: "javascript-2",
     title: "JavaScript",
-    img: "https://miro.medium.com/v2/resize:fit:810/1*iyySjhSD7tdqG9J0YZxfdw.png",
+    img: "../img/js/js-2.webp",
     type: "Lenguaje de Programación",
     textColor: "text-yellow-500",
     details: ["Realista", "4K", "HD"
     ],
   },
   {
-    id: "javascript-2",
-    title: "JavaScript",
-    img: "https://midu.dev/images/wallpapers/una-taza-de-javascript.png",
-    type: "Lenguaje de Programación",
-    textColor: "text-yellow-500",
-    details: ["Realista", "4K", "HD"
+    id: "tailwind-3",
+    title: "Tailwind Css",
+    img: "../img/tailwind/tailwind-3.webp",
+    type: "Framework",
+    textColor: "text-cyan-500",
+    details: ["Minimalista", "4K", "HD"],
+  },
+  {
+    id: "css-3",
+    title: "CSS3",
+    img: "../img/css/css-3.webp",
+    type: "Framework",
+    textColor: "text-orange-400",
+    details: ["3D", "4K", "HD"
     ],
   },
   {
     id: "javascript-3",
     title: "JavaScript",
-    img: "https://midu.dev/images/wallpapers/javascript-grande-horizontal-4k.png",
+    img: "../img/js/js-3.webp",
     type: "Lenguaje de Programación",
     textColor: "text-yellow-500",
     details: ["Realista", "4K", "HD"
@@ -154,46 +206,108 @@ export const images = [
   {
     id: "astro-3",
     title: "Astro Js",
-    img: "https://blog.openreplay.com/images/building-an-astro-website-with-wordpress-as-a-headless-cms/images/hero.png",
+    img: "../img/astro/astro-1.webp",
     type: "Framework",
     textColor: "text-orange-500",
     details: ["Fantasia", "4K", "HD"
     ],
   },
   {
-    id: "astro-4",
-    title: "Astro Js",
-    img: "https://reywins.com/images/astro-banner.png",
+    id: "tailwind-4",
+    title: "Tailwind Css",
+    img: "../img/tailwind/tailwind-4.webp",
     type: "Framework",
-    textColor: "text-orange-500",
-    details: ["Fantasia", "4K", "HD"
-    ],
+    textColor: "text-cyan-500",
+    details: ["Minimalista", "4K", "HD"],
   },
   {
-    id: "next-3",
-    title: "Next Js",
-    img: "https://wallpapercave.com/wp/wp11846968.png",
-    type: "Framework",
-    textColor: "",
-    details: ["Futurista", "4K", "HD"
+    id: "react-4",
+    title: "React Js",
+    img: "../img/react/react-4.webp",
+    type: "Biblioteca",
+    textColor: "text-cyan-400",
+    details: ["Minimalista", "4K", "HD"
     ],
   },
   {
     id: "next-4",
     title: "Next Js",
-    img: "https://images.ctfassets.net/aq13lwl6616q/6F802DfBmpgmgUKfFgzeif/74ea9b5d6f987ddd7af36b1dd2094492/nextjs_zero_to_mastery.png",
+    img: "../img/next/next-4.webp",
     type: "Framework",
     textColor: "",
     details: ["Futurista", "4K", "HD"
     ],
   },
   {
-    id: "next-5",
+    id: "javascript-4",
+    title: "JavaScript",
+    img: "../img/js/js-4.webp",
+    type: "Lenguaje de Programación",
+    textColor: "text-yellow-500",
+    details: ["Realista", "4K", "HD"
+    ],
+  },
+  {
+    id: "astro-4",
+    title: "Astro Js",
+    img: "../img/astro/astro-4.webp",
+    type: "Framework",
+    textColor: "text-orange-500",
+    details: ["Fantasia", "4K", "HD"
+    ],
+  },
+  {
+    id: "html-6",
+    title: "HTML5",
+    img: "../img/html/html-6.webp",
+    type: "Framework",
+    textColor: "text-orange-400",
+    details: ["3D", "4K", "HD"
+    ],
+  },
+  {
+    id: "css-6",
+    title: "CSS3",
+    img: "../img/css/css-6.webp",
+    type: "Framework",
+    textColor: "text-orange-400",
+    details: ["3D", "4K", "HD"
+    ],
+  },
+  {
+    id: "next-6",
     title: "Next Js",
-    img: "https://media.licdn.com/dms/image/D4E12AQEIqlkU8NSvJg/article-cover_image-shrink_600_2000/0/1692105491054?e=2147483647&v=beta&t=5a8EH7I7NCdUmV13-itNvChm4W_yJOQxx4iFqbaEilE",
+    img: "../img/next/next-6.webp",
     type: "Framework",
     textColor: "",
     details: ["Futurista", "4K", "HD"
+    ],
+  },
+  {
+    id: "javascript-5",
+    title: "JavaScript",
+    img: "../img/js/js-5.webp",
+    type: "Lenguaje de Programación",
+    textColor: "text-yellow-500",
+    details: ["Realista", "4K", "HD"
+    ],
+  },
+  {
+    id: "astro-5",
+    title: "Astro Js",
+    img: "../img/astro/astro-5.webp",
+    type: "Framework",
+    textColor: "text-orange-500",
+    details: ["Fantasia", "4K", "HD"
+    ],
+  },
+  {
+    id: "html-5",
+    title: "HTML5",
+    img: "../img/html/html-5.webp",
+    type: "Framework",
+    textColor: "text-orange-400",
+    details: ["3D", "4K", "HD"
     ],
   },
   {
@@ -203,6 +317,41 @@ export const images = [
     type: "Biblioteca",
     textColor: "text-cyan-400",
     details: ["Minimalista", "4K", "HD"
+    ],
+  },
+  {
+    id: "css-4",
+    title: "CSS3",
+    img: "../img/css/css-4.webp",
+    type: "Framework",
+    textColor: "text-orange-400",
+    details: ["3D", "4K", "HD"
+    ],
+  },
+  {
+    id: "next-5",
+    title: "Next Js",
+    img: "../img/next/next-5.webp",
+    type: "Framework",
+    textColor: "",
+    details: ["Futurista", "4K", "HD"
+    ],
+  },
+  {
+    id: "tailwind-5",
+    title: "Tailwind Css",
+    img: "../img/tailwind/tailwind-5.webp",
+    type: "Framework",
+    textColor: "text-cyan-500",
+    details: ["Minimalista", "4K", "HD"],
+  },
+  {
+    id: "javascript-6",
+    title: "JavaScript",
+    img: "../img/js/js-6.webp",
+    type: "Lenguaje de Programación",
+    textColor: "text-yellow-500",
+    details: ["Realista", "4K", "HD"
     ],
   },
 ];
