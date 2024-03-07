@@ -27,7 +27,8 @@ if (!info) {
             style={`view-transition-name: image-${info.id};`}
             class="w-full h-full object-cover aspect-video rounded-lg"
             src={`${info.img}`}
-            alt="/"
+            title={`${info.title}`}
+            alt={`${info.title}`}
           />
         </picture>
         <div class="w-full flex flex-col gap-10">
@@ -46,12 +47,13 @@ if (!info) {
           </header>
           <footer class="flex gap-2">
             <a
-              id="download"
+              title="Descargar"
               class="bg-blue-600 text-lg rounded-lg text-white py-2 px-8"
               href={`${info.img}`}
               download={`${info.title}`}>Descargar</a
             >
             <a
+              title="Volver"
               class="bg-gray-600 text-lg rounded-lg text-white py-2 px-8"
               href="javascript:history.back(-1);">Volver</a
             >
