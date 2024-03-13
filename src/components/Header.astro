@@ -3,7 +3,7 @@ import Github from "../icons/Github.astro";
 import Menu from "../icons/Menu.astro";
 ---
 
-<header class="w-full flex justify-center py-6 px-12 max-md:px-2">
+<header class="w-full flex sticky z-40 justify-center py-6 px-12 max-md:px-2 ">
   <nav
     class="w-full grid grid-cols-8 gap-10 items-center max-w-[1920px] max-2xl:gap-4 max-xl:grid-cols-6 max-sm:grid-cols-4"
   >
@@ -79,80 +79,76 @@ import Menu from "../icons/Menu.astro";
   >
     <Github class="w-8 transition-colors hover:fill-cyan-500" />
   </a>
+
   <nav class="flex w-[42px] h-[42px] items-center justify-center xl:hidden">
-    <Menu id="iconMenu" class="w-9 h-9 cursor-pointer fixed z-50" />
+    <Menu id="iconMenu" class="w-9 h-9 cursor-pointer z-50" />
   </nav>
-  <div
-  id="menu-nesting"
-  class="text-white grid place-content-center gap-10 text-center text-2xl absolute w-full h-screen top-0 bottom-0 transition-all right-[-100%] z-40 bg-[#0F0F14] md:hidden"
->
-  <a
-    title="Inicio"
-    href="/"
-    class={`transition-colors hover:text-cyan-500 ${Astro.props.home}`}
-    >Inicio</a
+
+    <div
+    id="menu-nesting"
+    class="text-white grid place-content-center gap-10 text-center text-2xl absolute w-full h-screen top-0 bottom-0 translate-x-[-100%] transition-all bg-[#0F0F14] xl:hidden"
   >
-  <a
-    title="HTML5"
-    href="/html/"
-    class={`transition-colors hover:text-cyan-500 ${Astro.props.html}`}
-    >Html</a
-  >
-  <a
-    title="CSS3"
-    href="/css/"
-    class={`transition-colors hover:text-cyan-500 ${Astro.props.css}`}
-    >Css</a
-  >
-  <a
-    title="JavaScript"
-    href="/js/"
-    class={`transition-colors hover:text-cyan-500 ${Astro.props.js}`}
-    >JavaScript</a
-  >
-  <a
-    title="React"
-    href="/react/"
-    class={`transition-colors hover:text-cyan-500 ${Astro.props.react}`}
-    >React</a
-  >
-  <a
-    title="Tailwind"
-    href="/tailwind/"
-    class={`transition-colors hover:text-cyan-500 ${Astro.props.tailwind}`}
-    >Tailwind</a
-  >
-  <a
-    title="Next Js"
-    href="/next/"
-    class={`transition-colors hover:text-cyan-500 ${Astro.props.next}`}
-    >Next Js</a
-  >
-  <a
-    title="Astro Js"
-    href="/astrojs/"
-    class={`transition-colors hover:text-cyan-500 ${Astro.props.astro}`}
-    >Astro</a
-  >
-</div>
+    <a
+      title="Inicio"
+      href="/"
+      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.home}`}
+      >Inicio</a
+    >
+    <a
+      title="HTML5"
+      href="/html/"
+      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.html}`}
+      >Html</a
+    >
+    <a
+      title="CSS3"
+      href="/css/"
+      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.css}`}
+      >Css</a
+    >
+    <a
+      title="JavaScript"
+      href="/js/"
+      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.js}`}
+      >JavaScript</a
+    >
+    <a
+      title="React"
+      href="/react/"
+      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.react}`}
+      >React</a
+    >
+    <a
+      title="Tailwind"
+      href="/tailwind/"
+      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.tailwind}`}
+      >Tailwind</a
+    >
+    <a
+      title="Next Js"
+      href="/next/"
+      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.next}`}
+      >Next Js</a
+    >
+    <a
+      title="Astro Js"
+      href="/astrojs/"
+      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.astro}`}
+      >Astro</a
+    >
+  </div>
+
 </header>
 
-<script >
+<script>
   const iconMenu = document.querySelector("#iconMenu");
   const menu = document.querySelector("#menu-nesting");
   const body = document.querySelector("#body");
   iconMenu.addEventListener("click", openMenu);
 
   function openMenu() {
-    menu.classList.toggle("right-[0]");
+    menu.classList.toggle("translate-x-0");
     body.classList.toggle("overflow-hidden");
     iconMenu.classList.toggle("stroke-white");
   }
-
-  document.querySelectorAll(".linksMenu").forEach(function (link) {
-    link.addEventListener("click", function () {
-      menu.classList.toggle("right-[0]");
-      body.classList.toggle("overflow-hidden");
-    });
-  });
 </script>
