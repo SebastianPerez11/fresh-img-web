@@ -3,13 +3,14 @@ import Github from "../icons/Github.astro";
 import Menu from "../icons/Menu.astro";
 ---
 
-<header class="w-full flex sticky z-40 justify-center py-6 px-12 max-md:px-2 ">
+<header class="w-full flex sticky z-50 justify-center py-6 px-12 max-md:px-2 ">
   <nav
     class="w-full grid grid-cols-8 gap-10 items-center max-w-[1920px] max-2xl:gap-4 max-xl:grid-cols-6 max-sm:grid-cols-4"
   >
     <picture class="max-md:col-span-2">
       <a href="/" title="Fresh Img" class="font-semibold text-2xl">Fresh Img</a>
     </picture>
+    
     <div class="flex col-span-2 max-xl:col-span-3 max-sm:col-span-full">
       <input
         class="w-full py-2 px-4 border rounded-full"
@@ -19,6 +20,7 @@ import Menu from "../icons/Menu.astro";
         id="search"
       />
     </div>
+
     <div
       class="flex w-full justify-between items-center col-span-3 max-2xl:col-span-4 text-lg max-xl:hidden"
     >
@@ -71,6 +73,7 @@ import Menu from "../icons/Menu.astro";
         >Astro</a
       >
     </div>
+
   </nav>
   <a
     href="https://github.com/SebastianPerez11"
@@ -86,54 +89,54 @@ import Menu from "../icons/Menu.astro";
 
     <div
     id="menu-nesting"
-    class="text-white grid place-content-center gap-10 text-center text-2xl absolute w-full h-screen top-0 bottom-0 translate-x-[-100%] transition-all bg-[#0F0F14] xl:hidden"
+    class="text-white grid place-content-center gap-8 text-center text-2xl fixed w-full h-screen top-0 bottom-0 translate-x-[100%] transition-transform bg-[#0F0F14] xl:hidden"
   >
     <a
       title="Inicio"
       href="/"
-      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.home}`}
+      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.home}`}
       >Inicio</a
     >
     <a
       title="HTML5"
       href="/html/"
-      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.html}`}
+      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.html}`}
       >Html</a
     >
     <a
       title="CSS3"
       href="/css/"
-      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.css}`}
+      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.css}`}
       >Css</a
     >
     <a
       title="JavaScript"
       href="/js/"
-      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.js}`}
+      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.js}`}
       >JavaScript</a
     >
     <a
       title="React"
       href="/react/"
-      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.react}`}
+      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.react}`}
       >React</a
     >
     <a
       title="Tailwind"
       href="/tailwind/"
-      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.tailwind}`}
+      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.tailwind}`}
       >Tailwind</a
     >
     <a
       title="Next Js"
       href="/next/"
-      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.next}`}
+      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.next}`}
       >Next Js</a
     >
     <a
       title="Astro Js"
       href="/astrojs/"
-      class={`transition-colors hover:text-cyan-500 linksMenu ${Astro.props.astro}`}
+      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.astro}`}
       >Astro</a
     >
   </div>
@@ -144,11 +147,19 @@ import Menu from "../icons/Menu.astro";
   const iconMenu = document.querySelector("#iconMenu");
   const menu = document.querySelector("#menu-nesting");
   const body = document.querySelector("#body");
+  const links = document.querySelectorAll("linkslinks ")
   iconMenu.addEventListener("click", openMenu);
 
   function openMenu() {
-    menu.classList.toggle("translate-x-[0]");
+    menu.classList.toggle("translate-x-[100%]");
     body.classList.toggle("overflow-hidden");
     iconMenu.classList.toggle("stroke-white");
   }
+
+  links.forEach((link) => {
+    link.addEventListener("click", () =>{
+      menu.classList.toggle("translate-x-[100%]");
+      body.classList.toggle("overflow-hidden");
+    })
+  })
 </script>
