@@ -93,72 +93,51 @@ import Menu from "../icons/Menu.astro";
     <a
       title="Inicio"
       href="/"
-      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.home}`}
+      class={`links transition-colors hover:text-cyan-500 ${Astro.props.home}`}
       >Inicio</a
     >
     <a
       title="HTML5"
       href="/html/"
-      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.html}`}
+      class={`links transition-colors hover:text-cyan-500 ${Astro.props.html}`}
       >Html</a
     >
     <a
       title="CSS3"
       href="/css/"
-      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.css}`}
+      class={`links transition-colors hover:text-cyan-500 ${Astro.props.css}`}
       >Css</a
     >
     <a
       title="JavaScript"
       href="/js/"
-      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.js}`}
+      class={`links transition-colors hover:text-cyan-500 ${Astro.props.js}`}
       >JavaScript</a
     >
     <a
       title="React"
       href="/react/"
-      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.react}`}
+      class={`links transition-colors hover:text-cyan-500 ${Astro.props.react}`}
       >React</a
     >
     <a
       title="Tailwind"
       href="/tailwind/"
-      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.tailwind}`}
+      class={`links transition-colors hover:text-cyan-500 ${Astro.props.tailwind}`}
       >Tailwind</a
     >
     <a
       title="Next Js"
       href="/next/"
-      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.next}`}
+      class={`links transition-colors hover:text-cyan-500 ${Astro.props.next}`}
       >Next Js</a
     >
     <a
       title="Astro Js"
       href="/astrojs/"
-      class={`links transition-colors hover:text-cyan-500 linksMenu ${Astro.props.astro}`}
+      class={`links transition-colors hover:text-cyan-500 ${Astro.props.astro}`}
       >Astro</a
     >
   </div>
 </header>
-
-<script>
-  const iconMenu = document.querySelector("#iconMenu");
-  const menu = document.querySelector("#menu-nesting");
-  const body = document.querySelector("#body");
-  const links = document.querySelectorAll(".links");
-  iconMenu.addEventListener("click", openMenu);
-
-  function openMenu() {
-    menu.classList.toggle("translate-x-[100%]");
-    body.classList.toggle("overflow-hidden");
-    iconMenu.classList.toggle("stroke-white");
-    console.log("click")
-  }
-
-  links.forEach((link) => {
-    link.addEventListener("click", () => {
-      menu.classList.toggle("translate-x-[100%]");
-      body.classList.toggle("overflow-hidden");
-    });
-  });
-</script>
+<script src="/src/js/appMenu.js"></script>
