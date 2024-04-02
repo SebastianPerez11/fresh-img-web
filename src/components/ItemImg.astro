@@ -4,6 +4,7 @@ const { id, img, title } = Astro.props;
 
 <a class="overflow-hidden rounded-lg min-w-[340px]" href={`/${id}`}>
   <img
+    loading="lazy"
     style={`view-transition-name: image-${id};`}
     class="w-full object-cover aspect-video rounded-lg transition-transform hover:scale-110"
     src={img}

@@ -7,7 +7,7 @@ import Menu from "../icons/Menu.astro";
   <nav
     class="w-full grid grid-cols-8 gap-10 items-center max-w-[1920px] max-2xl:gap-4 max-xl:grid-cols-6 max-sm:grid-cols-4"
   >
-    <picture class="max-md:col-span-2">
+    <picture class="max-md:col-span-2 z-20">
       <a href="/" title="Fresh Img" class="font-semibold text-2xl">Fresh Img</a>
     </picture>
 
@@ -74,6 +74,7 @@ import Menu from "../icons/Menu.astro";
       >
     </div>
   </nav>
+
   <a
     href="https://github.com/SebastianPerez11"
     target="_blank"
@@ -88,56 +89,94 @@ import Menu from "../icons/Menu.astro";
 
   <div
     id="menu-nesting"
-    class="text-white grid place-content-center gap-8 text-center text-2xl fixed w-full h-screen top-0 bottom-0 translate-x-[100%] transition-transform bg-[#0F0F14] xl:hidden"
+    class="text-cyan-600 tracking-wide flex py-20 px-4 flex-col gap-6 text-start text-2xl fixed w-full h-screen top-0 bottom-0 translate-x-[100%] transition-transform bg-[#fbfdff] xl:hidden"
   >
     <a
       title="Inicio"
       href="/"
       class={`links transition-colors hover:text-cyan-500 ${Astro.props.home}`}
-      >Inicio</a
+      >- Inicio</a
     >
     <a
       title="HTML5"
       href="/html/"
       class={`links transition-colors hover:text-cyan-500 ${Astro.props.html}`}
-      >Html</a
+      >- Html</a
     >
     <a
       title="CSS3"
       href="/css/"
       class={`links transition-colors hover:text-cyan-500 ${Astro.props.css}`}
-      >Css</a
+      >- Css</a
     >
     <a
       title="JavaScript"
       href="/js/"
       class={`links transition-colors hover:text-cyan-500 ${Astro.props.js}`}
-      >JavaScript</a
+      >- JavaScript</a
     >
     <a
       title="React"
       href="/react/"
       class={`links transition-colors hover:text-cyan-500 ${Astro.props.react}`}
-      >React</a
+      >- React</a
     >
     <a
       title="Tailwind"
       href="/tailwind/"
       class={`links transition-colors hover:text-cyan-500 ${Astro.props.tailwind}`}
-      >Tailwind</a
+      >- Tailwind</a
     >
     <a
       title="Next Js"
       href="/next/"
       class={`links transition-colors hover:text-cyan-500 ${Astro.props.next}`}
-      >Next Js</a
+      >- Next Js</a
     >
     <a
       title="Astro Js"
       href="/astrojs/"
       class={`links transition-colors hover:text-cyan-500 ${Astro.props.astro}`}
-      >Astro</a
+      >- Astro</a
     >
   </div>
 </header>
-<script src="/src/js/appMenu.js"></script>
+<script is:inline>
+  function init() {
+    const iconMenu = document.querySelector("#iconMenu");
+    const menu = document.querySelector("#menu-nesting");
+    const body = document.querySelector("#body");
+    const links = document.querySelectorAll(".links");
+
+    // Rest of script...
+    iconMenu.addEventListener("click", openMenu);
+
+    function openMenu() {
+    menu.classList.toggle("translate-x-[100%]");
+    body.classList.toggle("overflow-hidden");
+  }
+
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.toggle("translate-x-[100%]");
+      body.classList.toggle("overflow-hidden");
+    });
+  });
+
+    // Clean up by destroying instances and removing event listeners
+    document.addEventListener(
+      "astro:before-swap",
+      () => {
+        // SomeClass.destroy()
+        // document.removeEventListener(...)
+      },
+      { once: true }
+    );
+  }
+
+  // Initialize on first load
+  init();
+
+  // Re-initialize after swapping pages
+  document.addEventListener("astro:after-swap", init);
+</script>
